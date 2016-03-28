@@ -10,17 +10,13 @@ using System.Windows.Forms;
 
 namespace PhotoCentreMS
 {
-    public partial class Form1 : Form
+    public partial class frmNewOrder : Form
     {
-        public Form1()
+        public frmNewOrder()
         {
             InitializeComponent();
         }
 
-        private void btnNewOrder_Click(object sender, EventArgs e)
-        {
-            frmNewOrder NewOrder = new frmNewOrder();
-            NewOrder.ShowDialog();
-        }
+
     }
 }

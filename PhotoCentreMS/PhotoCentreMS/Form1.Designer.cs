@@ -61,18 +61,25 @@
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.tbxOrderSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnNewOrder = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderLines)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -335,20 +342,65 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.dateTimePicker1);
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.btnSearch);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.tbxOrderSearch);
+            this.panel3.Controls.Add(this.panel6);
+            this.panel3.Controls.Add(this.panel5);
             this.panel3.Location = new System.Drawing.Point(5, 87);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(119, 546);
             this.panel3.TabIndex = 4;
             // 
+            // panel6
+            // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.button1);
+            this.panel6.Controls.Add(this.label9);
+            this.panel6.Controls.Add(this.dateTimePicker1);
+            this.panel6.Location = new System.Drawing.Point(-1, 104);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(117, 105);
+            this.panel6.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(21, 74);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Today";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 14);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "View Orders From:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(4, 40);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(108, 20);
+            this.dateTimePicker1.TabIndex = 9;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Controls.Add(this.tbxOrderSearch);
+            this.panel5.Controls.Add(this.btnSearch);
+            this.panel5.Location = new System.Drawing.Point(-1, -1);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(118, 100);
+            this.panel5.TabIndex = 10;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 12);
+            this.label8.Location = new System.Drawing.Point(22, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(73, 13);
             this.label8.TabIndex = 5;
@@ -356,14 +408,14 @@
             // 
             // tbxOrderSearch
             // 
-            this.tbxOrderSearch.Location = new System.Drawing.Point(5, 38);
+            this.tbxOrderSearch.Location = new System.Drawing.Point(4, 35);
             this.tbxOrderSearch.Name = "tbxOrderSearch";
             this.tbxOrderSearch.Size = new System.Drawing.Size(108, 20);
             this.tbxOrderSearch.TabIndex = 6;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(22, 71);
+            this.btnSearch.Location = new System.Drawing.Point(21, 68);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 7;
@@ -373,27 +425,21 @@
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.btnNewOrder);
             this.panel4.Location = new System.Drawing.Point(5, 27);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(937, 54);
             this.panel4.TabIndex = 5;
             // 
-            // label9
+            // btnNewOrder
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 122);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "View Orders From:";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(5, 148);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(108, 20);
-            this.dateTimePicker1.TabIndex = 9;
+            this.btnNewOrder.Location = new System.Drawing.Point(5, 3);
+            this.btnNewOrder.Name = "btnNewOrder";
+            this.btnNewOrder.Size = new System.Drawing.Size(54, 44);
+            this.btnNewOrder.TabIndex = 0;
+            this.btnNewOrder.Text = "New Order";
+            this.btnNewOrder.UseVisualStyleBackColor = true;
+            this.btnNewOrder.Click += new System.EventHandler(this.btnNewOrder_Click);
             // 
             // Form1
             // 
@@ -408,7 +454,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Photo Centre MS";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -417,7 +463,11 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrderLines)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -464,6 +514,10 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button btnNewOrder;
     }
 }
 
