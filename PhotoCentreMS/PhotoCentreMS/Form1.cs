@@ -22,5 +22,11 @@ namespace PhotoCentreMS
             frmNewOrder NewOrder = new frmNewOrder();
             NewOrder.ShowDialog();
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            frmSettings Settings = new frmSettings();
+            Settings.ShowDialog();
+        }
     }
 }
