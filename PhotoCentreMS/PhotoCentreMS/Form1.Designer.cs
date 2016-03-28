@@ -65,6 +65,8 @@
             this.tbxOrderSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOrders)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -333,6 +335,8 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.dateTimePicker1);
+            this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.btnSearch);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.tbxOrderSearch);
@@ -373,6 +377,23 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(937, 54);
             this.panel4.TabIndex = 5;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(13, 122);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "View Orders From:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(5, 148);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(108, 20);
+            this.dateTimePicker1.TabIndex = 9;
             // 
             // Form1
             // 
@@ -441,6 +462,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox tbxOrderSearch;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label9;
     }
 }
 
